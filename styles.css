@@ -1,0 +1,379 @@
+.title{
+  margin: 0;
+  color: seagreen;
+}
+.subtitle{
+  color: rgb(42, 96, 73);
+}
+.body-text{
+  color: rgb(57, 57, 57);
+}
+.title,
+.subtitle,
+.body-text{
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+body{
+  background: linear-gradient(to bottom, mediumspringgreen, rgb(255, 255, 255));
+  margin: 0;
+}
+.header{
+  width:100% ;
+  height:80px ;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.header img {
+ width: 120px;
+ height: 120px;
+ object-fit: contain;
+}
+.football{
+  width: 120px;
+  height: 120px;
+  animation: spin-bobble 10s linear infinite;
+}
+  @keyframes spin-bobble{
+    0% {
+      transform: rotate(0deg) translateY(0);
+    }
+    25%{
+      transform: rotate(90deg) translateY(-10px);
+    }
+    50%{
+      transform:rotate(180deg) translateY(0px);
+    }
+    75%{
+      transform:rotate(270deg) translateY(10px);
+    }
+    100% {
+      transform: rotate(360deg) translateY(0);
+    }
+}
+#Fuel{
+  margin: 0;
+}
+#Mind{
+  margin: 0;
+}
+#Body{
+  margin: 0;
+}
+#Technical{
+  margin: 0;
+}
+.Body-Box{
+  position: relative;
+  width: 150px;
+  height:80px ;
+  background-color: white;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+}
+.weights {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  opacity: 0.75;
+  z-index: 0;
+  margin-bottom: 60px;
+  margin-right: -90px;
+  rotate: 20deg;
+}
+.Fuel-Box{
+  position: relative;
+  width: 150px;
+  height:80px ;
+  background-color: white;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+}
+
+#fire{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  opacity: 0.75;
+  z-index: 0;
+  margin-bottom: 60px;
+  margin-right: 90px;
+  rotate: -20deg;
+}
+.Mind-box{
+  position: relative;
+  width: 150px;
+  height:80px ;
+  background-color: white;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+}
+#Brain{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  opacity: 0.75;
+  z-index: 0;
+  margin-bottom: -60px;
+  margin-right: 90px;
+  rotate: -20deg;
+}
+.Technical-Box{
+  position: relative;
+  width: 150px;
+  height:80px ;
+  background-color: white;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+}
+#ball1{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  opacity: 0.75;
+  z-index: 0;
+  margin-bottom: -60px;
+  margin-right: -120px;
+  rotate: -20deg;
+}
+.Body-Box,
+.Fuel-Box,
+.Mind-box,
+.Technical-Box{
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 1.25s ease;
+}
+.Body-Box:focus-visible,
+.Fuel-Box:focus-visible,
+.Mind-box:focus-visible,
+.Technical-Box:focus-visible{
+  outline: 3px solid seagreen;
+  outline-offset: 4px;
+}
+.training-sections{
+  max-width: 800px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+}
+.training-sections section{
+  scroll-margin-top: 24px;
+  margin: 24px 0;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: white;
+}
+.training-sections h2{
+  margin-top: 0;
+  color: seagreen;
+}
+.training-sections section {
+  transition: transform 0.25s ease, box-shadow 1.25s ease;
+}
+.training-sections section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0px 20px rgba(255, 255, 255, 0.8)
+}
+html{
+  scroll-behavior: smooth;
+}
+.Body-Box:hover,
+.Fuel-Box:hover,
+.Mind-box:hover,
+.Technical-Box:hover{
+  transform: scale(1.10);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8)
+}
+.football{
+  transition: scale 0.25s ease;
+}
+.football:hover{
+  scale: 1.1;
+}
+.Box-Grid{
+  display: grid;
+  grid-template-columns: repeat(2, 190px);
+  gap: 150px;
+  justify-content: center;
+  margin: 100px auto;
+}
+.Fuel-Box,
+.Mind-box,
+.Technical-Box,
+.Body-Box{
+  box-sizing: border-box;
+  width: 190px;
+  height: 120px;
+}
+#Lamine-Yamal-Jersey{
+  position: absolute;
+  left: 50px;
+  top: 150px;
+  width: 200px;
+  transform: rotate(20deg);
+}
+#Mbappe-Jersey{
+ position: absolute;
+  left: 50px;
+  top: 400px;
+  width: 200px;
+  transform: rotate(-20deg);
+}
+#Grilled-Chicken1{
+  position: absolute;
+  left: 1100px;
+  top: 250px;
+  width: 200px;
+  transform: rotate(-20deg);
+}
+#Lamine-Yamal-Jersey,
+#Mbappe-Jersey,
+#Grilled-Chicken1{
+  transition: scale 0.25s ease;
+}
+#Lamine-Yamal-Jersey:hover,
+#Mbappe-Jersey:hover,
+#Grilled-Chicken1:hover{
+  scale: 1.1;
+}
+#fuel-section p{
+  margin-bottom: 40px;
+}
+#fuel-section li{
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+#Steak-Sandwich{
+  width: 200px;
+  position: relative;
+  top: -1020px;
+  left: 450px;
+  transform: rotate(20deg)
+}
+#Steak-Sandwich{
+  transition: scale 0.25s ease;
+}
+#Steak-Sandwich:hover{
+  scale: 1.1;
+}
+#honey{
+  width: 200px;
+  position: relative;
+  top: -200px;
+  left: 450px;
+  margin-bottom: -200px;
+  transform: rotate(-20deg);
+}
+#honey{
+  transition: scale 0.25s ease;
+}
+#honey:hover{
+  scale: 1.1;
+}
+.training-sections section {
+  display: flow-root;
+}
+#mind-image,
+#technical-image,
+#body-image{
+  float: right;
+  width: 150px;
+  max-width: 35%;
+  height: auto;
+  object-fit: contain;
+  margin: 4px 0 16px 24px;
+  transition: scale 0.25s ease;
+}
+#mind-image{
+  transform: rotate(-12deg);
+}
+#technical-image{
+  transform: rotate(12deg);
+}
+#body-image{
+  transform: rotate(-12deg);
+}
+#mind-image:hover,
+#technical-image:hover,
+#body-image:hover{
+  scale: 1.08;
+}
+.inline-photo{
+  float: left;
+  width: 180px;
+  max-width: 40%;
+  height: 125px;
+  object-fit: cover;
+  margin: 8px 24px 16px 0;
+  border-radius: 12px;
+  transition: scale 0.25s ease;
+}
+.inline-photo:hover{
+  scale: 1.04;
+}
+@media (max-width: 600px){
+  .inline-photo{
+    width: 140px;
+    height: 105px;
+    margin-right: 16px;
+  }
+}
+.sources{
+  max-width: 1100px;
+  margin: 32px auto 0;
+  padding: 16px 24px;
+  border-top: 4px solid seagreen;
+  border-radius: 12px 12px 0 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+}
+.sources h2{
+  margin: 4px 0;
+  color: seagreen;
+  font-size: 16px;
+}
+.sources p{
+  margin: 4px 0;
+}
+.sources ul{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 24px;
+  margin: 6px 0 12px;
+  padding-left: 20px;
+}
+.sources li{
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px){
+  .sources{
+    margin-top: 24px;
+    padding: 14px 18px;
+  }
+  .sources ul{
+    grid-template-columns: 1fr;
+  }
+}
